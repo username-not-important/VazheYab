@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<ContextgameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Board>
+    <string>سشلد</string>
+    <string>یتدی</string>
+    <string>فاهگ</string>
+    <string>تپدر</string>
+  </Board>
+  <Context>
+    <InlineText>
+      <Text>ببخش اگر این روزها</Text>
+      <IsForeign>false</IsForeign>
+    </InlineText>
+    <InlineText>
+      <Text>عشق</Text>
+      <IsForeign>true</IsForeign>
+      <Replacement>دلدادگی</Replacement>
+      <Hint>دلـ..............گی</Hint>
+    </InlineText>
+    <InlineText>
+      <Text>با گریستن</Text>
+      <IsForeign>false</IsForeign>
+    </InlineText>
+    <InlineText>
+      <Text>اثبات</Text>
+      <IsForeign>true</IsForeign>
+      <Replacement>پایسته</Replacement>
+      <Hint>پا.........ـه</Hint>
+    </InlineText>
+    <InlineText>
+      <Text>می شود.</Text>
+      <IsForeign>false</IsForeign>
+    </InlineText>
+  </Context>
+  <MaxScore>4</MaxScore>
+  <PassingScore>3</PassingScore>
+  <Hints>1</Hints>
+</ContextgameData>

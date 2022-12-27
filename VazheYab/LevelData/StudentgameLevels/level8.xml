@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<StudentgameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PersianBoard>
+    <string>آوان</string>
+    <string>فیری</string>
+    <string>رتاب</string>
+    <string>بدآج</string>
+  </PersianBoard>
+  <EnglishBoard>
+    <string>sclo</string>
+    <string>uowu</string>
+    <string>nnyd</string>
+    <string>siar</string>
+  </EnglishBoard>
+  <ExpectedPairs>
+    <WordPair>
+      <English>sunny</English>
+      <Persian>آفتابی</Persian>
+    </WordPair>
+    <WordPair>
+      <English>cloudy</English>
+      <Persian>ابری</Persian>
+    </WordPair>
+    <WordPair>
+      <English>rainy</English>
+      <Persian>بارانی</Persian>
+    </WordPair>
+    <WordPair>
+      <English>snowy</English>
+      <Persian>برفی</Persian>
+    </WordPair>
+  </ExpectedPairs>
+  <MaxScore>8</MaxScore>
+  <PassingScore>5</PassingScore>
+  <TimeLimit>
+    <Value>00:00:30</Value>
+  </TimeLimit>
+</StudentgameData>

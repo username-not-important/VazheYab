@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<ContextgameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Board>
+    <string>فتپس</string>
+    <string>اوخد</string>
+    <string>ریرپ</string>
+    <string>نامز</string>
+  </Board>
+  <Context>
+    <InlineText>
+      <Text>دنیا</Text>
+      <IsForeign>false</IsForeign>
+    </InlineText>
+    <InlineText>
+      <Text>فهمید</Text>
+      <IsForeign>true</IsForeign>
+      <Replacement>دریافت</Replacement>
+      <Hint>در.......ـت</Hint>
+    </InlineText>
+    <InlineText>
+      <Text>خیلی</Text>
+      <IsForeign>false</IsForeign>
+    </InlineText>
+    <InlineText>
+      <Text>حقیر</Text>
+      <IsForeign>true</IsForeign>
+      <Replacement>خوار</Replacement>
+      <Hint>خـ......</Hint>
+    </InlineText>
+    <InlineText>
+      <Text>است</Text>
+      <IsForeign>false</IsForeign>
+    </InlineText>
+    <InlineText>
+      <Text>وقتی</Text>
+      <IsForeign>true</IsForeign>
+      <Replacement>زمانی</Replacement>
+      <Hint>زمـ........</Hint>
+    </InlineText>
+    <InlineText>
+      <Text>که گفتم یک تار مویت را به او نمیدهم.</Text>
+      <IsForeign>false</IsForeign>
+    </InlineText>
+  </Context>
+  <MaxScore>9</MaxScore>
+  <PassingScore>6</PassingScore>
+  <Hints>2</Hints>
+</ContextgameData>

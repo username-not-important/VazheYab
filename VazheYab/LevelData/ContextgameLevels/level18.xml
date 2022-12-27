@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<ContextgameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Board>
+    <string>تردل</string>
+    <string>یگلت</string>
+    <string>یریا</string>
+    <string>تمرگ</string>
+  </Board>
+  <Context>
+    <InlineText>
+      <Text>شیشه</Text>
+      <IsForeign>false</IsForeign>
+    </InlineText>
+    <InlineText>
+      <Text>قلبت</Text>
+      <IsForeign>true</IsForeign>
+      <Replacement>دلت</Replacement>
+      <Hint>......ـت</Hint>
+    </InlineText>
+    <InlineText>
+      <Text>را از</Text>
+      <IsForeign>false</IsForeign>
+    </InlineText>
+    <InlineText>
+      <Text>غبار</Text>
+      <IsForeign>true</IsForeign>
+      <Replacement>گرد</Replacement>
+      <Hint>گـ......</Hint>
+    </InlineText>
+    <InlineText>
+      <Text>کدورت</Text>
+      <IsForeign>true</IsForeign>
+      <Replacement>تیرگی</Replacement>
+      <Hint>تیـ...........ـی</Hint>
+    </InlineText>
+    <InlineText>
+      <Text>بزدا!</Text>
+      <IsForeign>false</IsForeign>
+    </InlineText>
+  </Context>
+  <MaxScore>9</MaxScore>
+  <PassingScore>7</PassingScore>
+  <Hints>2</Hints>
+</ContextgameData>

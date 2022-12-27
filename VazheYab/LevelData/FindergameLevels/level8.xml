@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<FindergameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Board>
+    <string>تفان</string>
+    <string>پرمگ</string>
+    <string>هشیپ</string>
+    <string>دچرو</string>
+  </Board>
+  <ExpectedWords>
+    <string>پیشرفت</string>
+    <string>چشمگیر</string>
+    <string>پشیمان</string>
+    <string>چشمان</string>
+    <string>شماره</string>
+    <string>پور</string>
+    <string>نگار</string>
+    <string>فرمان</string>
+    <string>گیشه</string>
+    <string>دهر</string>
+  </ExpectedWords>
+  <MaxScore>10</MaxScore>
+  <PassingScore>7</PassingScore>
+  <TimeLimit>
+    <Value>00:00:35</Value>
+  </TimeLimit>
+</FindergameData>

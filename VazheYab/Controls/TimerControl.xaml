@@ -1,0 +1,99 @@
+﻿<UserControl x:Class="VazheYab.Controls.TimerControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480" Width="220" Height="70">
+	<UserControl.Resources>
+		<Storyboard x:Name="StartupStoryboard">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="_TextTime">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="1">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<CircleEase EasingMode="EaseInOut"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="Clock">
+				<EasingDoubleKeyFrame KeyTime="0" Value="-55"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="0">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<SineEase EasingMode="EaseInOut"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Clock">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="1">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<SineEase EasingMode="EaseInOut"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="Clock">
+				<EasingDoubleKeyFrame KeyTime="0" Value="95"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="95">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<SineEase EasingMode="EaseInOut"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="95"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="0">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<CircleEase EasingMode="EaseInOut"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</UserControl.Resources>
+    
+    <Grid x:Name="LayoutRoot">
+    	<Grid x:Name="Clock" HorizontalAlignment="Left" Height="70" VerticalAlignment="Top" Width="70" RenderTransformOrigin="0.5,0.5">
+    		<Grid.RenderTransform>
+    			<CompositeTransform/>
+    		</Grid.RenderTransform>
+    		<Viewbox Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center">
+    			<Canvas Width="80" Height="79.3828">
+    				<Path Width="21.3333" Height="21.3333" Canvas.Left="38.6667" Canvas.Top="22.6667" Stretch="Fill" Data="F1 M 41.3333,22.6667L 38.6667,22.6667L 38.6667,44L 60,44L 60,41.3334L 41.3333,41.3334L 41.3333,22.6667 Z " Opacity="0.895">
+    					<Path.Fill>
+    						<SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+    					</Path.Fill>
+    				</Path>
+    				<Path Width="68.9167" Height="70.0494" Canvas.Left="5.54175" Canvas.Top="9.33337" Stretch="Fill" Data="F1 M 73.3333,42.6667C 73.3333,24.2566 58.4102,9.33337 40,9.33337C 21.5898,9.33337 6.66669,24.2566 6.66669,42.6667C 6.66669,50.7917 9.57684,58.2351 14.4077,64.0189L 5.54175,77.9506L 7.79175,79.3828L 16.2656,66.0657C 22.3112,72.1967 30.7097,76 40,76C 49.2904,76 57.6888,72.1967 63.7344,66.0657L 72.2084,79.3828L 74.4584,77.9506L 65.5924,64.0189C 70.4232,58.2351 73.3333,50.7917 73.3333,42.6667 Z M 40,73.3334C 23.0898,73.3334 9.33334,59.5762 9.33334,42.6667C 9.33334,25.7572 23.0898,12 40,12C 56.9102,12 70.6667,25.7572 70.6667,42.6667C 70.6667,59.5762 56.9102,73.3334 40,73.3334 Z " Opacity="0.895">
+    					<Path.Fill>
+    						<SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+    					</Path.Fill>
+    				</Path>
+    				<Path Width="30.6667" Height="30.6667" Canvas.Left="49.3333" Canvas.Top="0" Stretch="Fill" Data="F1 M 59.8855,0C 56.0104,0 52.4024,1.11133 49.3333,3.00977C 58.5522,12.2286 67.7722,21.4472 76.9921,30.6667C 78.8907,27.5971 80,23.989 80,20.1146C 80,9.00653 70.9948,0 59.8855,0 Z M 76.2473,26.1504L 69.7188,19.6238L 53.849,3.75391C 55.776,3.03778 57.8177,2.66669 59.8855,2.66669C 69.5065,2.66669 77.3333,10.4935 77.3333,20.1146C 77.3333,22.1823 76.9622,24.224 76.2473,26.1504 Z " Opacity="0.895">
+    					<Path.Fill>
+    						<SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+    					</Path.Fill>
+    				</Path>
+    				<Path Width="30.6667" Height="30.6667" Canvas.Left="0" Canvas.Top="0" Stretch="Fill" Data="F1 M 20.1145,0C 9.00522,0 0,9.00653 0,20.1146C 0,23.989 1.10931,27.5971 3.0079,30.6667C 12.2279,21.4472 21.4478,12.2286 30.6667,3.00977C 27.5976,1.11133 23.9896,0 20.1145,0 Z M 3.75269,26.1504C 3.03778,24.224 2.66669,22.1823 2.66669,20.1146C 2.66669,10.4935 10.4935,2.66669 20.1145,2.66669C 22.1823,2.66669 24.2241,3.03778 26.1511,3.75391L 10.2812,19.6238L 3.75269,26.1504 Z " Opacity="0.895">
+    					<Path.Fill>
+    						<SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+    					</Path.Fill>
+    				</Path>
+    			</Canvas>
+    		</Viewbox>
+    	</Grid>
+    	<TextBlock x:Name="_TextTime" HorizontalAlignment="Left" TextWrapping="Wrap" Text="00:00" VerticalAlignment="Top" Opacity="0.9" Margin="90,-31,0,0" FontFamily="/VazheYab;component/Fonts/Fonts.zip#B Tabassom" FontSize="80">
+    		<TextBlock.Foreground>
+    			<SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+    		</TextBlock.Foreground>
+    	</TextBlock>
+    </Grid>
+</UserControl>

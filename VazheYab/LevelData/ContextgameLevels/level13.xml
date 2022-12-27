@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<ContextgameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Board>
+    <string>جسیا</string>
+    <string>تخپن</string>
+    <string>هشدا</string>
+    <string>اهوخ</string>
+  </Board>
+  <Context>
+    <InlineText>
+      <Text>غم</Text>
+      <IsForeign>true</IsForeign>
+      <Replacement>اندوه</Replacement>
+      <Hint>....ـند.....</Hint>
+    </InlineText>
+    <InlineText>
+      <Text>خود را به برگها بسپار.</Text>
+      <IsForeign>false</IsForeign>
+    </InlineText>
+    <InlineText>
+      <Text>آخرین</Text>
+      <IsForeign>true</IsForeign>
+      <Replacement>واپسین</Replacement>
+      <Hint>وا........</Hint>
+    </InlineText>
+    <InlineText>
+      <Text>روزهای پاییزت</Text>
+      <IsForeign>false</IsForeign>
+    </InlineText>
+    <InlineText>
+      <Text>بخیر</Text>
+      <IsForeign>true</IsForeign>
+      <Replacement>خوش</Replacement>
+      <Hint>خـ......</Hint>
+    </InlineText>
+    <InlineText>
+      <Text>یلدا</Text>
+      <IsForeign>false</IsForeign>
+    </InlineText>
+    <InlineText>
+      <Text>مبارک</Text>
+      <IsForeign>true</IsForeign>
+      <Replacement>خجسته</Replacement>
+      <Hint>...ـسـته</Hint>
+    </InlineText>
+  </Context>
+  <MaxScore>12</MaxScore>
+  <PassingScore>8</PassingScore>
+  <Hints>2</Hints>
+</ContextgameData>

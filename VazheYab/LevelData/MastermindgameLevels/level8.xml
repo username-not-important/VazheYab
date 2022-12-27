@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<MastermindgameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SecretWord>میوز</SecretWord>
+  <Board>
+    <string>هفبر</string>
+    <string>زویم</string>
+    <string>اماز</string>
+    <string>ینجز</string>
+  </Board>
+  <Hints>
+    <string>آقا زنبوری که رفته تو دهن گربه چی میگه؟؟؟</string>
+  </Hints>
+  <Reactions>
+    <WordReaction>
+      <Word>میو</Word>
+      <Reaction>اینو که گربه می گه!</Reaction>
+    </WordReaction>
+    <WordReaction>
+      <Word>بی مزه</Word>
+      <Reaction> </Reaction>
+    </WordReaction>
+    <WordReaction>
+      <Word>مزز</Word>
+      <Reaction>نزدیکی!</Reaction>
+    </WordReaction>
+  </Reactions>
+</MastermindgameData>

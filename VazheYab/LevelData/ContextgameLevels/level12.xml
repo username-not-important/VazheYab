@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<ContextgameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Board>
+    <string>دوزم</string>
+    <string>سآرن</string>
+    <string>هیگد</string>
+    <string>بکنو</string>
+  </Board>
+  <Context>
+    <InlineText>
+      <Text>موت</Text>
+      <IsForeign>true</IsForeign>
+      <Replacement>مرگ</Replacement>
+      <Hint>......گ</Hint>
+    </InlineText>
+    <InlineText>
+      <Text>بزرگترین</Text>
+      <IsForeign>false</IsForeign>
+    </InlineText>
+    <InlineText>
+      <Text>لطمه</Text>
+      <IsForeign>true</IsForeign>
+      <Replacement>آسیب</Replacement>
+      <Hint>آ......ـب</Hint>
+    </InlineText>
+    <InlineText>
+      <Text>حیات</Text>
+      <IsForeign>true</IsForeign>
+      <Replacement>زندگی</Replacement>
+      <Hint>.........ـند.....</Hint>
+    </InlineText>
+    <InlineText>
+      <Text>نیست،</Text>
+      <IsForeign>false</IsForeign>
+    </InlineText>
+    <InlineText>
+      <Text>بلکه</Text>
+      <IsForeign>true</IsForeign>
+      <Replacement>ونکه</Replacement>
+      <Hint>و.....ـه</Hint>
+    </InlineText>
+    <InlineText>
+      <Text>چیزیست که در همان سان درون ما می میرد.</Text>
+      <IsForeign>false</IsForeign>
+    </InlineText>
+  </Context>
+  <MaxScore>12</MaxScore>
+  <PassingScore>8</PassingScore>
+  <Hints>2</Hints>
+</ContextgameData>

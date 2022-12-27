@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BDC72218-1471-4683-BAF6-4C4F954A441C}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VazheYab</RootNamespace>
+    <AssemblyName>VazheYab</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>VazheYab_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>VazheYab.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <ExpressionBlendVersion>12.0.41002.1</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BuddyControl.xaml.cs">
+      <DependentUpon>BuddyControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GameControls\BoardView.xaml.cs">
+      <DependentUpon>BoardView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GameControls\FlipBoardView.xaml.cs">
+      <DependentUpon>FlipBoardView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GameControls\LetterView.xaml.cs">
+      <DependentUpon>LetterView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GameControls\ScoreControl.xaml.cs">
+      <DependentUpon>ScoreControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GameControls\WordView.xaml.cs">
+      <DependentUpon>WordView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Models\LevelModel.cs" />
+    <Compile Include="Controls\TileControl.xaml.cs">
+      <DependentUpon>TileControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TimerControl.xaml.cs">
+      <DependentUpon>TimerControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\BoolToVisiblityConverter.cs" />
+    <Compile Include="Converters\ReverseBoolToVisiblityConverter.cs" />
+    <Compile Include="LevelData\ContextgameData.cs" />
+    <Compile Include="LevelData\FindergameData.cs" />
+    <Compile Include="LevelData\GameDataFactory.cs" />
+    <Compile Include="LevelData\HardcoregameData.cs" />
+    <Compile Include="LevelData\MastermindgameData.cs" />
+    <Compile Include="LevelData\StudentgameData.cs" />
+    <Compile Include="LevelData\TextSerializer.cs" />
+    <Compile Include="LocalizedStrings.cs" />
+    <Compile Include="Logic\ContextGame.cs" />
+    <Compile Include="Logic\FinderGame.cs" />
+    <Compile Include="Logic\HardcoreGame.cs" />
+    <Compile Include="Logic\MastermindGame.cs" />
+    <Compile Include="Logic\StudentGame.cs" />
+    <Compile Include="Logic\TimespanClass.cs" />
+    <Compile Include="Logic\VazheGame.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Games\ContextGamePage.xaml.cs">
+      <DependentUpon>ContextGamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Games\FinderGamePage.xaml.cs">
+      <DependentUpon>FinderGamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GameChoosePage.xaml.cs">
+      <DependentUpon>GameChoosePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Games\HardcoreGamePage.xaml.cs">
+      <DependentUpon>HardcoreGamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Games\MastermindGamePage.xaml.cs">
+      <DependentUpon>MastermindGamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Games\StudentGamePage.xaml.cs">
+      <DependentUpon>StudentGamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\General\About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Help\HelpFrame.xaml.cs">
+      <DependentUpon>HelpFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LevelsPage.xaml.cs">
+      <DependentUpon>LevelsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Settings\SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressData\ProgressSettings.cs" />
+    <Compile Include="ProgressData\ProgressSettingsDataContext.cs" />
+    <Compile Include="ProgressData\SettingViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\AppResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="ContentStyles.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\BuddyControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\GameControls\BoardView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\GameControls\FlipBoardView.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\GameControls\LetterView.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\GameControls\ScoreControl.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\GameControls\WordView.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\TileControl.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\TimerControl.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Games\ContextGamePage.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Games\FinderGamePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\GameChoosePage.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Games\HardcoreGamePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Games\MastermindGamePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Games\StudentGamePage.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\General\About.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Help\HelpFrame.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\LevelsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Settings\SettingsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\AlignmentGrid.png" />
+    <Content Include="Assets\ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BG\bg02.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="LevelData\FindergameLevels\level1.xml" />
+    <Resource Include="LevelData\FindergameLevels\level2.xml" />
+    <Resource Include="LevelData\FindergameLevels\level3.xml" />
+    <Resource Include="LevelData\FindergameLevels\level4.xml" />
+    <Resource Include="LevelData\FindergameLevels\level5.xml" />
+    <Resource Include="LevelData\FindergameLevels\level6.xml" />
+    <Resource Include="LevelData\FindergameLevels\level7.xml" />
+    <Resource Include="LevelData\FindergameLevels\level8.xml" />
+    <Resource Include="LevelData\FindergameLevels\level9.xml" />
+    <Resource Include="LevelData\FindergameLevels\level10.xml" />
+    <Resource Include="LevelData\FindergameLevels\level11.xml" />
+    <Resource Include="LevelData\FindergameLevels\level12.xml" />
+    <Resource Include="LevelData\ContextgameLevels\level1.xml" />
+    <Resource Include="LevelData\ContextgameLevels\level2.xml" />
+    <Resource Include="LevelData\ContextgameLevels\level3.xml" />
+    <Resource Include="LevelData\ContextgameLevels\level4.xml" />
+    <Resource Include="LevelData\ContextgameLevels\level5.xml" />
+    <Resource Include="LevelData\ContextgameLevels\level6.xml" />
+    <Resource Include="LevelData\ContextgameLevels\level7.xml" />
+    <Resource Include="LevelData\ContextgameLevels\level8.xml" />
+    <Resource Include="LevelData\FindergameLevels\level13.xml" />
+    <Resource Include="LevelData\FindergameLevels\level14.xml" />
+    <Resource Include="LevelData\MastermindgameLevels\level1.xml" />
+    <Resource Include="LevelData\MastermindgameLevels\level2.xml">
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="LevelData\MastermindgameLevels\level3.xml" />
+    <Resource Include="LevelData\MastermindgameLevels\level4.xml" />
+    <Resource Include="LevelData\MastermindgameLevels\level5.xml" />
+    <Resource Include="LevelData\MastermindgameLevels\level6.xml" />
+    <Resource Include="LevelData\MastermindgameLevels\level7.xml" />
+    <Resource Include="LevelData\MastermindgameLevels\level8.xml" />
+    <Resource Include="LevelData\StudentgameLevels\level1.xml" />
+    <Resource Include="LevelData\StudentgameLevels\level2.xml" />
+    <Resource Include="LevelData\StudentgameLevels\level3.xml">
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="LevelData\StudentgameLevels\level4.xml" />
+    <Resource Include="LevelData\StudentgameLevels\level5.xml" />
+    <Resource Include="LevelData\StudentgameLevels\level6.xml" />
+    <Resource Include="LevelData\StudentgameLevels\level7.xml" />
+    <Resource Include="LevelData\StudentgameLevels\level8.xml" />
+    <Resource Include="LevelData\StudentgameLevels\level9.xml" />
+    <Resource Include="LevelData\StudentgameLevels\level10.xml" />
+    <Resource Include="LevelData\FindergameLevels\level15.xml" />
+    <Resource Include="LevelData\FindergameLevels\level16.xml" />
+    <Content Include="Images\BG\bg01.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BG\bg03.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BG\bg04.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BG\thumbs\bg01.jpg" />
+    <Content Include="Images\BG\thumbs\bg02.jpg" />
+    <Content Include="Images\BG\thumbs\bg03.jpg" />
+    <Content Include="Images\BG\thumbs\bg04.jpg" />
+    <Resource Include="LevelData\FindergameLevels\level17.xml" />
+    <Resource Include="LevelData\FindergameLevels\level18.xml" />
+    <Resource Include="LevelData\FindergameLevels\level19.xml" />
+    <Resource Include="LevelData\MastermindgameLevels\level9.xml" />
+    <Resource Include="LevelData\ContextgameLevels\level9.xml" />
+    <Resource Include="LevelData\ContextgameLevels\level10.xml" />
+    <Resource Include="LevelData\ContextgameLevels\level11.xml" />
+    <Resource Include="LevelData\ContextgameLevels\level12.xml" />
+    <Resource Include="LevelData\ContextgameLevels\level13.xml" />
+    <Resource Include="LevelData\ContextgameLevels\level14.xml" />
+    <Resource Include="LevelData\ContextgameLevels\level15.xml" />
+    <Resource Include="LevelData\ContextgameLevels\level16.xml" />
+    <Resource Include="LevelData\ContextgameLevels\level17.xml" />
+    <Resource Include="LevelData\FindergameLevels\level20.xml" />
+    <Resource Include="LevelData\FindergameLevels\level21.xml" />
+    <Resource Include="LevelData\MastermindgameLevels\level10.xml" />
+    <Resource Include="LevelData\MastermindgameLevels\level11.xml" />
+    <Resource Include="LevelData\ContextgameLevels\level18.xml" />
+    <Resource Include="LevelData\ContextgameLevels\level19.xml" />
+    <Resource Include="LevelData\ContextgameLevels\level20.xml" />
+    <Resource Include="LevelData\StudentgameLevels\level11.xml" />
+    <Resource Include="LevelData\HardcoregameLevels\level1.xml" />
+    <Resource Include="LevelData\HardcoregameLevels\level2.xml" />
+    <Content Include="LogoThumbnail.png" />
+    <Resource Include="Pages\Help\help0.txt" />
+    <Resource Include="Pages\Help\help1.txt" />
+    <Resource Include="Pages\Help\help2.txt" />
+    <Resource Include="Pages\Help\help3.txt" />
+    <Resource Include="Pages\Help\help4.txt" />
+    <Resource Include="Pages\Help\help5.txt" />
+    <Content Include="ProgressData\DefaultProgressData.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SFX\CorrectWord.mp3" />
+    <Content Include="SFX\DuplicateWord.mp3" />
+    <Content Include="SFX\GameStart.mp3" />
+    <Content Include="SFX\WrongWord.mp3" />
+    <Content Include="TileIconMedium.png" />
+    <Content Include="TileIconSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Tiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BlendEmbeddedFont Include="Fonts\MRT_poster.ttf">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </BlendEmbeddedFont>
+    <BlendEmbeddedFont Include="Fonts\MRT_poster14.ttf">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </BlendEmbeddedFont>
+    <BlendEmbeddedFont Include="Fonts\BTabssom.ttf">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </BlendEmbeddedFont>
+    <Resource Include="Controls\GameControls\Images\WordFlare.png" />
+    <Resource Include="LogoSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Drawing" />
+    <Reference Include="Microsoft.Expression.Interactions" />
+    <Reference Include="System.Windows.Interactivity" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Expression\Blend\WindowsPhone\v8.0\Microsoft.Expression.Blend.WindowsPhone.targets" />
+</Project>

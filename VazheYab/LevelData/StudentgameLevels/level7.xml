@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<StudentgameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PersianBoard>
+    <string>نکرم</string>
+    <string>اتسی</string>
+    <string>وریا</string>
+    <string>صنجه</string>
+  </PersianBoard>
+  <EnglishBoard>
+    <string>oalb</string>
+    <string>rcnp</string>
+    <string>egki</string>
+    <string>amel</string>
+  </EnglishBoard>
+  <ExpectedPairs>
+    <WordPair>
+      <English>orange</English>
+      <Persian>نارنجی</Persian>
+    </WordPair>
+    <WordPair>
+      <English>pink</English>
+      <Persian>صورتی</Persian>
+    </WordPair>
+    <WordPair>
+      <English>black</English>
+      <Persian>سیاه</Persian>
+    </WordPair>
+    <WordPair>
+      <English>cream</English>
+      <Persian>کرمی</Persian>
+    </WordPair>
+  </ExpectedPairs>
+  <MaxScore>8</MaxScore>
+  <PassingScore>5</PassingScore>
+  <TimeLimit>
+    <Value>00:00:30</Value>
+  </TimeLimit>
+</StudentgameData>

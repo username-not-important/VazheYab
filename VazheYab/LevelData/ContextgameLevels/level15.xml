@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<ContextgameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Board>
+    <string>امبر</string>
+    <string>کگاک</string>
+    <string>نارس</string>
+    <string>یویت</string>
+  </Board>
+  <Context>
+    <InlineText>
+      <Text>زندگی</Text>
+      <IsForeign>false</IsForeign>
+    </InlineText>
+    <InlineText>
+      <Text>قافله ای</Text>
+      <IsForeign>true</IsForeign>
+      <Replacement>کاروانی</Replacement>
+      <Hint>کا...........نی</Hint>
+    </InlineText>
+    <InlineText>
+      <Text>است زودگذر. آهنگی</Text>
+      <IsForeign>false</IsForeign>
+    </InlineText>
+    <InlineText>
+      <Text>ناقص</Text>
+      <IsForeign>true</IsForeign>
+      <Replacement>نارسا</Replacement>
+      <Hint>نـ........سا</Hint>
+    </InlineText>
+    <InlineText>
+      <Text>. تابلویی زیبا که در آن هیچ چیز رنگ</Text>
+      <IsForeign>false</IsForeign>
+    </InlineText>
+    <InlineText>
+      <Text>حقیقت</Text>
+      <IsForeign>true</IsForeign>
+      <Replacement>راستی</Replacement>
+      <Hint>ر.......</Hint>
+    </InlineText>
+    <InlineText>
+      <Text>نمی گیرد</Text>
+      <IsForeign>false</IsForeign>
+    </InlineText>
+    <InlineText>
+      <Text>جز</Text>
+      <IsForeign>true</IsForeign>
+      <Replacement>مگر</Replacement>
+      <Hint>مـ.....</Hint>
+    </InlineText>
+    <InlineText>
+      <Text>مهربانی ها.</Text>
+      <IsForeign>false</IsForeign>
+    </InlineText>
+  </Context>
+  <MaxScore>16</MaxScore>
+  <PassingScore>9</PassingScore>
+  <Hints>3</Hints>
+</ContextgameData>

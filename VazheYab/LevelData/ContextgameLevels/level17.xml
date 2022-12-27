@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<ContextgameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Board>
+    <string>یرند</string>
+    <string>گداه</string>
+    <string>ربیک</string>
+    <string>یخرد</string>
+  </Board>
+  <Context>
+    <InlineText>
+      <Text>دنیا</Text>
+      <IsForeign>true</IsForeign>
+      <Replacement>کیهان</Replacement>
+      <Hint>کـ........ن</Hint>
+    </InlineText>
+    <InlineText>
+      <Text>شامل</Text>
+      <IsForeign>true</IsForeign>
+      <Replacement>دربرگیرنده</Replacement>
+      <Hint>در......گیـ.......ه</Hint>
+    </InlineText>
+    <InlineText>
+      <Text>بعضیها</Text>
+      <IsForeign>true</IsForeign>
+      <Replacement>برخی</Replacement>
+      <Hint>بر......</Hint>
+    </InlineText>
+    <InlineText>
+      <Text>نمی شه، چون خودشون یه</Text>
+      <IsForeign>false</IsForeign>
+    </InlineText>
+    <InlineText>
+      <Text>دنیا</Text>
+      <IsForeign>true</IsForeign>
+      <Replacement>کیهان</Replacement>
+      <Hint>کـ.......ن</Hint>
+    </InlineText>
+    <InlineText>
+      <Text>اند!</Text>
+      <IsForeign>false</IsForeign>
+    </InlineText>
+  </Context>
+  <MaxScore>12</MaxScore>
+  <PassingScore>5</PassingScore>
+  <Hints>2</Hints>
+</ContextgameData>

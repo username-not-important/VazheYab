@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ProgressSettings>
+  <ProgressSetting Key="ProgressDataVersion" Value="7"/>
+  <ProgressSetting Key="Settings_BG" Value="01"/>
+  <ProgressSetting Key="Settings_Difficulty" Value="Hard"/>
+  <ProgressSetting Key="Findergame_LevelsCleared" Value="0"/>
+  <ProgressSetting Key="Contextgame_LevelsCleared" Value="0"/>
+  <ProgressSetting Key="Mastermindgame_LevelsCleared" Value="0"/>
+  <ProgressSetting Key="Studentgame_LevelsCleared" Value="0"/>
+  <ProgressSetting Key="Hardcoregame_LevelsCleared" Value="0"/>
+</ProgressSettings>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<MastermindgameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SecretWord>اخگر</SecretWord>
+  <Board>
+    <string>رتپا</string>
+    <string>شطخد</string>
+    <string>ژیوگ</string>
+    <string>متآر</string>
+  </Board>
+  <Hints>
+    <string>هم ارز پارسی شعله</string>
+    <string>نزدیک به هم ارز پارسی ستاره</string>
+    <string>به کچل و اینا فکر کن</string>
+    <string>دقت کردی تاحالا ژ نگذاشته بودم؟؟؟</string>
+    <string>ژ نداره بابا</string>
+  </Hints>
+  <Reactions>
+    <WordReaction>
+      <Word>اختر</Word>
+      <Reaction>نزدیکی!</Reaction>
+    </WordReaction>
+    <WordReaction>
+      <Word>خطر</Word>
+      <Reaction>حسن خطرناکه حسن!</Reaction>
+    </WordReaction>
+    <WordReaction>
+      <Word>آتیش</Word>
+      <Reaction>دست من نبوده، وگرنه آتیش پاره هم میگذاشتم.</Reaction>
+    </WordReaction>
+  </Reactions>
+</MastermindgameData>

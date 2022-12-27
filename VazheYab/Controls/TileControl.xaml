@@ -1,0 +1,71 @@
+﻿<ButtonBase x:Name="tileControl" x:Class="VazheYab.TileControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480" Width="130" Height="130">
+    <ButtonBase.Resources>
+		<Storyboard x:Name="TileAnimation" AutoReverse="False" RepeatBehavior="Forever">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationX)" Storyboard.TargetName="_Title">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="-3.231"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:3" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="_Title">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="33.738"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:3" Value="3"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationZ)" Storyboard.TargetName="_Title">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="-0.808"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:3" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="_Title">
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:3" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:3.5" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Desc">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:3" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:3.5" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</ButtonBase.Resources>
+    
+    <Grid x:Name="LayoutRoot" Width="130" Height="130">
+    	<Border BorderThickness="1" Opacity="0.75">
+    		<Border.BorderBrush>
+    			<SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+    		</Border.BorderBrush>
+    	</Border>
+    	<TextBlock x:Name="_Title" HorizontalAlignment="Center" Text="{Binding Title, ElementName=tileControl}" VerticalAlignment="Center" FontFamily="/VazheYab;component/Fonts/Fonts.zip#MRT_Poster" FontSize="64">
+    		<TextBlock.Foreground>
+    			<SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+    		</TextBlock.Foreground>
+    		<TextBlock.Projection>
+    			<PlaneProjection/>
+    		</TextBlock.Projection>
+    	</TextBlock>
+    	<Grid x:Name="Desc" Margin="1" Opacity="0">
+    		<Grid Opacity="0.15">
+    			<Grid.Background>
+    				<SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+    			</Grid.Background>
+    		</Grid>
+    		<TextBlock x:Name="_Tooltip" HorizontalAlignment="Center" TextWrapping="Wrap" Text="{Binding Desciption, ElementName=tileControl}" VerticalAlignment="Top" Margin="5" FlowDirection="RightToLeft" FontFamily="/VazheYab;component/Fonts/Fonts.zip#MRT_Poster" FontSize="{Binding FontSize, ElementName=tileControl}" TextAlignment="Center">
+    			<TextBlock.Foreground>
+    				<SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+    			</TextBlock.Foreground>
+    		</TextBlock>
+    	</Grid>
+    </Grid>
+</ButtonBase>
